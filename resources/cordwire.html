@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cordwire — HXVRMXN-dev</title>
+<meta name="description" content="Cordwire — a modernized DiscordAcePerms for FiveM. Install, configuration, exports & events, and FAQ.">
+<link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="cordwire">
+
+<header class="topbar">
+  <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+  </button>
+
+  <a href="../index.html" class="brand">
+    <span class="brand-mark">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M6 22 L12 22 L14 16 L18 16 L20 10 L26 10" stroke="#cfb87e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="22" r="2" fill="none" stroke="#e6d7a6" stroke-width="1.6"/><circle cx="26" cy="10" r="2" fill="none" stroke="#e6d7a6" stroke-width="1.6"/></svg>
+    </span>
+    <span>HXVRMXN-dev<small>FiveM Resource Docs</small></span>
+  </a>
+
+  <nav class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="cordwire.html" class="active">Resources</a>
+  </nav>
+
+  <button class="topbar-search" data-search-trigger type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <span>Search docs…</span>
+    <span class="kbd-hint"><kbd>&#8984;</kbd><kbd>K</kbd></span>
+  </button>
+
+  <div class="topbar-icons">
+    <a class="icon-btn" href="https://github.com/HXVRMXN-dev" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.8 5.4.8 11.7c0 5 3.3 9.3 7.8 10.8.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2 1 .1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.1-3.1-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3 1.1a10.5 10.5 0 015.5 0c2.1-1.4 3-1.1 3-1.1.6 1.6.2 2.8.1 3.1.7.8 1.1 1.8 1.1 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.8C23.2 5.4 18.3.5 12 .5z"/></svg>
+    </a>
+  </div>
+</header>
+
+<div class="backdrop"></div>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="side-group">
+      <div class="side-title">Overview</div>
+      <a class="side-link" href="../index.html"><span class="side-dot"></span>Home</a>
+    </div>
+    <div class="side-group">
+      <div class="side-title">Resources</div>
+      <a class="side-link active" href="cordwire.html"><span class="side-dot status-live"></span>Cordwire</a>
+    </div>
+    <div class="side-external">
+      <a href="https://github.com/HXVRMXN-dev" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+        GitHub — HXVRMXN-dev
+      </a>
+      <a href="https://forum.cfx.re/u/HXVRMXN.dev" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 000 18M3 12h18M6 6a10 10 0 0012 0M6 18a10 10 0 0112 0"/></svg>
+        CFX Forum — HXVRMXN.dev
+      </a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="doc-col">
+
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+        <span>Cordwire</span>
+      </div>
+
+      <div class="prose">
+        <span class="badge live" style="margin-bottom:14px;">Active</span>
+        <h1>Cordwire</h1>
+        <p class="lede">A modernized DiscordAcePerms. Cordwire keeps your server's ACE permission groups in sync with your Discord roles automatically — no manual re-adding principals every time staff changes.</p>
+
+        <div class="callout info">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
+          <div>
+            <div class="callout-title">Standalone, framework-agnostic</div>
+            <p>Cordwire only talks to Discord and your server's ACE system — it doesn't depend on ESX, QBCore, or any specific framework.</p>
+          </div>
+        </div>
+
+        <h2 id="overview">Overview</h2>
+        <p>On start, Cordwire pulls each linked player's Discord roles and maps them to ACE groups defined in your config. It re-checks on a timer and on Discord role-update events (via bot mode), so promotions and demotions in Discord apply in-game without a restart.</p>
+        <ul class="list">
+          <li>Two sync modes: lightweight <strong>webhook polling</strong> or a full <strong>bot connection</strong> for near-instant updates.</li>
+          <li>Role → ACE group mapping defined entirely in <code>config.lua</code>, no database required.</li>
+          <li>Exports to read a player's current synced group from other resources.</li>
+          <li>Console logging with a dry-run mode so you can verify mappings before going live.</li>
+        </ul>
+
+        <h2 id="installation">Installation</h2>
+        <ol class="list">
+          <li>Download the latest release from the <a href="https://github.com/HXVRMXN-dev" target="_blank" rel="noopener">GitHub repo</a> and drop the <code>cordwire</code> folder into your server's <code>resources</code> directory.</li>
+          <li>Create a Discord application at the <a href="https://discord.com/developers/applications" target="_blank" rel="noopener">Discord Developer Portal</a> and invite the bot to your server (or generate a webhook, depending on the mode you choose).</li>
+          <li>Copy <code>config.example.lua</code> to <code>config.lua</code> and fill in your <code>guildId</code>, bot token or webhook URL, and role mappings.</li>
+          <li>Add the following to your <code>server.cfg</code>, above any resources that depend on ACE permissions:</li>
+        </ol>
+
+        <div class="code-block">
+          <div class="code-head"><span>server.cfg</span></div>
+          <pre>ensure cordwire</pre>
+        </div>
+
+        <div class="callout warn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.3 3.9L2.6 18a2 2 0 001.7 3h15.4a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg>
+          <div>
+            <div class="callout-title">Load order matters</div>
+            <p>Cordwire needs to start before any resource that checks ACE permissions on player join, or those checks may run before groups are assigned.</p>
+          </div>
+        </div>
+
+        <h2 id="configuration">Configuration</h2>
+        <p>All settings live in <code>config.lua</code>. The core of it is the role map, which pairs a Discord role ID with an ACE group name:</p>
+
+        <div class="code-block">
+          <div class="code-head"><span>config.lua</span></div>
+          <pre><span class="c-key">Config</span>.Discord = {
+  <span class="c-key">guildId</span>       = <span class="c-str">"123456789012345678"</span>,
+  <span class="c-key">mode</span>          = <span class="c-str">"bot"</span>,        <span class="c-com">-- "bot" or "webhook"</span>
+  <span class="c-key">botToken</span>      = <span class="c-str">"YOUR_BOT_TOKEN"</span>,
+  <span class="c-key">refreshSeconds</span> = <span class="c-num">120</span>,
+}
+
+<span class="c-key">Config</span>.RoleMap = {
+  [<span class="c-str">"998877665544332211"</span>] = <span class="c-str">"admin"</span>,
+  [<span class="c-str">"887766554433221100"</span>] = <span class="c-str">"moderator"</span>,
+  [<span class="c-str">"776655443322110099"</span>] = <span class="c-str">"support"</span>,
+}
+
+<span class="c-key">Config</span>.DryRun = <span class="c-num">false</span> <span class="c-com">-- log intended changes without applying them</span></pre>
+        </div>
+
+        <table>
+          <thead><tr><th>Key</th><th>Type</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>Discord.mode</code></td><td>string</td><td><code>"bot"</code> for live role-update events, <code>"webhook"</code> for lightweight polling only.</td></tr>
+            <tr><td><code>Discord.refreshSeconds</code></td><td>number</td><td>How often Cordwire re-checks roles in webhook mode.</td></tr>
+            <tr><td><code>RoleMap</code></td><td>table</td><td>Discord role ID → ACE group name. A player can hold multiple mapped roles.</td></tr>
+            <tr><td><code>DryRun</code></td><td>boolean</td><td>When true, Cordwire logs what it would change without touching ACE.</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="exports-and-events">Exports &amp; Events</h2>
+        <p>Other resources can read a player's synced state or react to sync changes:</p>
+
+        <div class="code-block">
+          <div class="code-head"><span>server-side export</span></div>
+          <pre><span class="c-key">local</span> group = exports.cordwire:GetSyncedGroup(source)
+<span class="c-com">-- returns the ACE group string, or nil if unsynced</span></pre>
+        </div>
+
+        <table>
+          <thead><tr><th>Export / Event</th><th>Side</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><code>GetSyncedGroup(source)</code></td><td>Server export</td><td>Returns the player's currently synced ACE group.</td></tr>
+            <tr><td><code>ForceRefresh(source)</code></td><td>Server export</td><td>Immediately re-checks a single player's Discord roles.</td></tr>
+            <tr><td><code>cordwire:playerSynced</code></td><td>Server event</td><td>Fires after a player's ACE group is assigned or changed.</td></tr>
+            <tr><td><code>cordwire:playerUnlinked</code></td><td>Server event</td><td>Fires when a player has no Discord account linked.</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="faq">FAQ</h2>
+
+        <h3>The bot connects but roles never sync</h3>
+        <p>Double-check the bot has the <strong>Server Members Intent</strong> enabled in the Developer Portal — without it, Cordwire can't read member roles even with a valid token.</p>
+
+        <h3>Can I map one Discord role to multiple ACE groups?</h3>
+        <p>Not directly in <code>RoleMap</code>, but you can listen for <code>cordwire:playerSynced</code> in your own resource and grant additional principals from there.</p>
+
+        <h3>Webhook mode isn't picking up changes fast enough</h3>
+        <p>Webhook mode only polls on the interval set by <code>refreshSeconds</code>. Switch to <code>mode = "bot"</code> for near-instant updates driven by Discord's gateway events instead.</p>
+
+        <h3>Players aren't linked to Discord at all</h3>
+        <p>Cordwire relies on your server already having Discord identifiers attached to players (standard with FiveM's Discord identifier). If a player joined without Discord linked, Cordwire fires <code>cordwire:playerUnlinked</code> and leaves their ACE group untouched.</p>
+
+      </div>
+
+      <nav class="page-nav">
+        <a href="../index.html" class="prev">
+          <span class="dir">Previous</span>
+          <span class="label">Home</span>
+        </a>
+      </nav>
+
+      <footer class="site-footer" style="padding-left:0;padding-right:0;margin-top:24px;">
+        <span>&copy; <span data-year>2026</span> HXVRMXN-dev. Built for the FiveM community.</span>
+        <div class="foot-links">
+          <a href="../index.html">Home</a>
+          <a href="cordwire.html">Cordwire</a>
+          <a href="https://github.com/HXVRMXN-dev" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://forum.cfx.re/u/HXVRMXN.dev" target="_blank" rel="noopener">CFX Forum</a>
+        </div>
+      </footer>
+
+    </div>
+
+    <aside class="toc">
+      <div class="toc-inner">
+        <div class="toc-title">On this page</div>
+        <ul class="toc-list">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#configuration">Configuration</a></li>
+          <li><a href="#exports-and-events">Exports &amp; Events</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+</div>
+
+<div class="search-modal">
+  <div class="search-panel">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" placeholder="Search docs…" autocomplete="off" spellcheck="false">
+      <span class="search-esc">ESC</span>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
