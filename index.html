@@ -3,173 +3,204 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project Docs</title>
-<meta name="description" content="Documentation for my project.">
+<title>HXVRMXN-dev — FiveM Resource Docs</title>
+<meta name="description" content="Documentation for FiveM resources built by HXVRMXN-dev, for GTA V Enhanced servers.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-page="home">
 
-<div class="md-drawer-backdrop" id="backdrop"></div>
+<header class="topbar">
+  <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+  </button>
 
-<header class="md-header">
-  <div class="md-header__inner">
-    <button class="md-icon-btn" id="drawerToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
-    </button>
-    <a class="md-header__title" href="index.html">
-      <span class="md-header__dot"></span>
-      Project Docs
-    </a>
-    <div class="md-header__search">
-      <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 5L20.49 19l-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
-      <input type="search" id="searchInput" placeholder="Search" aria-label="Search documentation">
-    </div>
-    <a class="md-header__source" href="https://github.com/username/repo" target="_blank" rel="noopener">
-      <svg viewBox="0 0 16 16" width="18" height="18"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38l-.01-1.49c-2.01.44-2.43-.97-2.43-.97-.33-.83-.81-1.05-.81-1.05-.66-.45.05-.44.05-.44.73.05 1.12.75 1.12.75.65 1.11 1.7.79 2.12.6.07-.48.26-.79.46-.97-1.61-.18-3.3-.8-3.3-3.57 0-.79.28-1.43.75-1.94-.08-.18-.33-.92.07-1.92 0 0 .61-.2 2 .74a6.9 6.9 0 0 1 3.64 0c1.39-.94 2-.74 2-.74.4 1 .15 1.74.07 1.92.47.51.75 1.15.75 1.94 0 2.78-1.7 3.39-3.31 3.57.27.23.5.68.5 1.37l-.01 2.03c0 .21.14.45.55.38A8 8 0 0 0 8 0z"/></svg>
-      <span>HXVRMXN-dev</span>
+  <a href="index.html" class="brand">
+    <span class="brand-mark">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M6 22 L12 22 L14 16 L18 16 L20 10 L26 10" stroke="#cfb87e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="22" r="2" fill="none" stroke="#e6d7a6" stroke-width="1.6"/><circle cx="26" cy="10" r="2" fill="none" stroke="#e6d7a6" stroke-width="1.6"/></svg>
+    </span>
+    <span>HXVRMXN-dev<small>FiveM Resource Docs</small></span>
+  </a>
+
+  <nav class="topnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="resources/cordwire.html">Resources</a>
+  </nav>
+
+  <button class="topbar-search" data-search-trigger type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <span>Search docs…</span>
+    <span class="kbd-hint"><kbd>&#8984;</kbd><kbd>K</kbd></span>
+  </button>
+
+  <div class="topbar-icons">
+    <a class="icon-btn" href="https://github.com/HXVRMXN-dev" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.8 5.4.8 11.7c0 5 3.3 9.3 7.8 10.8.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2 1 .1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.1-3.1-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3 1.1a10.5 10.5 0 015.5 0c2.1-1.4 3-1.1 3-1.1.6 1.6.2 2.8.1 3.1.7.8 1.1 1.8 1.1 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.8C23.2 5.4 18.3.5 12 .5z"/></svg>
     </a>
   </div>
 </header>
 
-<div class="md-container">
+<div class="backdrop"></div>
 
-  <nav class="md-sidebar md-sidebar--primary" id="primarySidebar">
-    <div class="md-sidebar__inner">
-      <p class="md-nav__title">Navigation</p>
-      <nav class="md-nav">
-        <a href="#introduction" class="md-nav__link md-nav__link--top" data-toc>Introduction</a>
+<div class="shell">
 
-        <details class="md-nav__section" open>
-          <summary>Getting started</summary>
-          <ul class="md-nav__list">
-            <li><a href="#installation" class="md-nav__link" data-toc>Installation</a></li>
-            <li><a href="#quick-example" class="md-nav__link" data-toc>Quick example</a></li>
-          </ul>
-        </details>
-
-        <details class="md-nav__section" open>
-          <summary>Guide</summary>
-          <ul class="md-nav__list">
-            <li><a href="#configuration" class="md-nav__link" data-toc>Configuration</a></li>
-            <li><a href="#admonitions" class="md-nav__link" data-toc>Admonitions</a></li>
-          </ul>
-        </details>
-
-        <details class="md-nav__section" open>
-          <summary>Reference</summary>
-          <ul class="md-nav__list">
-            <li><a href="#faq" class="md-nav__link" data-toc>FAQ</a></li>
-            <li><a href="#changelog" class="md-nav__link" data-toc>Changelog</a></li>
-          </ul>
-        </details>
-      </nav>
+  <aside class="sidebar">
+    <div class="side-group">
+      <div class="side-title">Overview</div>
+      <a class="side-link active" href="index.html"><span class="side-dot"></span>Home</a>
     </div>
-  </nav>
+    <div class="side-group">
+      <div class="side-title">Resources</div>
+      <a class="side-link" href="resources/cordwire.html"><span class="side-dot status-live"></span>Cordwire</a>
+    </div>
+    <div class="side-external">
+      <a href="https://github.com/HXVRMXN-dev" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.6 2.8 5.5 3.1 5.5 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+        GitHub — HXVRMXN-dev
+      </a>
+      <a href="https://forum.cfx.re/u/HXVRMXN.dev" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 000 18M3 12h18M6 6a10 10 0 0012 0M6 18a10 10 0 0112 0"/></svg>
+        CFX Forum — HXVRMXN.dev
+      </a>
+    </div>
+  </aside>
 
-  <main class="md-content">
-    <article class="md-content__inner">
+  <main class="main">
+    <div class="doc-col" style="max-width:100%;padding:0;">
 
-      <h1>Project Docs</h1>
-      <p class="md-subtitle">A short, honest description of what this project does and who it's for.</p>
-
-      <h2 id="introduction">Introduction</h2>
-      <p>
-        Replace this text with a two or three sentence introduction: what the project
-        is, the problem it solves, and the fastest path to trying it out.
-      </p>
-
-      <h2 id="installation">Installation</h2>
-      <p>Clone the repository and install dependencies:</p>
-      <div class="codehilite">
-        <div class="codehilite__title">
-          <span>bash</span>
-          <button class="copy-btn" data-copy>Copy</button>
+      <section class="hero">
+        <svg class="hero-wires" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <path class="wire-path" d="M -20 340 L 140 340 L 180 300 L 320 300 L 360 260 L 560 260" />
+          <path class="wire-path alt" d="M 1220 60 L 1040 60 L 1000 100 L 840 100 L 800 140 L 660 140" />
+          <path class="wire-path" d="M -20 120 L 100 120 L 140 160 L 260 160" />
+          <circle class="wire-node pulse" cx="140" cy="340" r="4.5" />
+          <circle class="wire-node" cx="320" cy="300" r="4.5" />
+          <circle class="wire-node pulse" cx="560" cy="260" r="4.5" />
+          <circle class="wire-node pulse" cx="1040" cy="60" r="4.5" />
+          <circle class="wire-node" cx="840" cy="100" r="4.5" />
+          <circle class="wire-node pulse" cx="660" cy="140" r="4.5" />
+          <circle class="wire-node" cx="260" cy="160" r="4.5" />
+        </svg>
+        <div class="hero-inner">
+          <div class="eyebrow">FiveM Resource Docs</div>
+          <h1>Resources for FiveM,<br><span>documented properly.</span></h1>
+          <p class="lede">Technical reference for the scripts I build and maintain for GTA V Enhanced servers running FiveM — install steps, config options, exports, and the fixes for the things that break at 2am.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="resources/cordwire.html">
+              Browse resources
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/HXVRMXN-dev" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.8 5.4.8 11.7c0 5 3.3 9.3 7.8 10.8.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2 1 .1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.1-3.1-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3 1.1a10.5 10.5 0 015.5 0c2.1-1.4 3-1.1 3-1.1.6 1.6.2 2.8.1 3.1.7.8 1.1 1.8 1.1 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.8C23.2 5.4 18.3.5 12 .5z"/></svg>
+              View on GitHub
+            </a>
+          </div>
         </div>
-        <pre><code>git clone https://github.com/username/repo.git
-cd repo
-npm install</code></pre>
-      </div>
+      </section>
 
-      <h2 id="quick-example">Quick example</h2>
-      <p>The smallest possible example that actually works:</p>
-      <div class="codehilite">
-        <div class="codehilite__title">
-          <span>js</span>
-          <button class="copy-btn" data-copy>Copy</button>
+      <section class="section" id="resources">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow" style="margin-bottom:10px;">Resources</div>
+            <h2>Everything documented here</h2>
+          </div>
+          <p>Each resource gets its own install guide, config reference, and export list — the same page you'd want open in a second tab while you set it up.</p>
         </div>
-        <pre><code>import { thing } from "package";
+        <div class="card-grid">
 
-thing.run();</code></pre>
-      </div>
+          <a class="res-card" href="resources/cordwire.html">
+            <div class="res-card-top">
+              <span class="res-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17h4l2-5h4l2-5h4"/><circle cx="4" cy="17" r="1.4"/><circle cx="20" cy="7" r="1.4"/></svg>
+              </span>
+              <span class="badge live">Active</span>
+            </div>
+            <h3>Cordwire</h3>
+            <p>Vehicle wiring &amp; hotwire system — strip panels, splice wires, hotwire ignitions the hard way.</p>
+            <div class="res-card-foot">
+              <div class="res-tags">
+                <span class="badge">Lua</span>
+                <span class="badge">Standalone</span>
+              </div>
+              <span class="res-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
 
-      <h2 id="configuration">Configuration</h2>
-      <p>Describe available options in a table, so people can scan rather than read.</p>
-      <table>
-        <thead>
-          <tr><th>Option</th><th>Type</th><th>Default</th><th>Description</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><code>verbose</code></td><td>boolean</td><td><code>false</code></td><td>Print extra logging output.</td></tr>
-          <tr><td><code>timeout</code></td><td>number</td><td><code>3000</code></td><td>Request timeout in milliseconds.</td></tr>
-        </tbody>
-      </table>
+          <div class="placeholder-card">
+            <strong>More resources soon</strong>
+            New scripts get documented here as they're released. Watch the GitHub for updates.
+          </div>
 
-      <h2 id="admonitions">Admonitions</h2>
-      <p>Callouts for information that needs to stand out from the main text.</p>
+        </div>
+      </section>
 
-      <div class="admonition note">
-        <p class="admonition-title">Note</p>
-        <p>This is a neutral aside — background info the reader can take or leave.</p>
-      </div>
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow" style="margin-bottom:10px;">Getting started</div>
+            <h2>From download to running server</h2>
+          </div>
+        </div>
+        <div class="prose" style="max-width:640px;">
+          <ol class="list">
+            <li>Open the resource you want from the sidebar and read through the overview so you know what it needs.</li>
+            <li>Follow that page's <strong>Installation</strong> section — download, drop it in your <code>resources</code> folder, and set convars if it has any.</li>
+            <li>Add <code>ensure &lt;resource-name&gt;</code> to your <code>server.cfg</code>, restart the resource, and check the console for errors.</li>
+          </ol>
+        </div>
+      </section>
 
-      <div class="admonition tip">
-        <p class="admonition-title">Tip</p>
-        <p>This is a suggestion that makes the reader's life easier.</p>
-      </div>
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow" style="margin-bottom:10px;">About</div>
+            <h2>Who's behind this</h2>
+          </div>
+        </div>
+        <div class="prose" style="max-width:640px;">
+          <p>I'm <strong>HXVRMXN-dev</strong> — I build and maintain resources for FiveM servers running GTA V Enhanced. This site is the standing reference for all of them, kept up to date alongside the code itself.</p>
+          <p>Found a bug, or something in these docs doesn't match what's actually in the script? Open an issue on the relevant GitHub repo, or reach out on the CFX forums.</p>
+          <div class="hero-actions">
+            <a class="btn btn-ghost" href="https://github.com/HXVRMXN-dev" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.8 5.4.8 11.7c0 5 3.3 9.3 7.8 10.8.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.2 1 .1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.1-3.1-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3 1.1a10.5 10.5 0 015.5 0c2.1-1.4 3-1.1 3-1.1.6 1.6.2 2.8.1 3.1.7.8 1.1 1.8 1.1 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.8C23.2 5.4 18.3.5 12 .5z"/></svg>
+              github.com/HXVRMXN-dev
+            </a>
+            <a class="btn btn-ghost" href="https://forum.cfx.re/u/HXVRMXN.dev" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 000 18M3 12h18M6 6a10 10 0 0012 0M6 18a10 10 0 0112 0"/></svg>
+              forum.cfx.re — HXVRMXN.dev
+            </a>
+          </div>
+        </div>
+      </section>
 
-      <div class="admonition warning">
-        <p class="admonition-title">Warning</p>
-        <p>This flags something that can break, cost money, or lose data.</p>
-      </div>
-
-      <h2 id="faq">FAQ</h2>
-      <p><strong>Question one?</strong><br>Answer goes here.</p>
-      <p><strong>Question two?</strong><br>Answer goes here.</p>
-
-      <h2 id="changelog">Changelog</h2>
-      <ul>
-        <li><strong>v0.1.0</strong> — Initial release.</li>
-      </ul>
-
-      <nav class="md-footer-nav">
-        <a class="md-footer-nav__link md-footer-nav__link--prev" href="#">
-          <span class="md-footer-nav__label">Previous</span>
-          <span>Overview</span>
-        </a>
-        <a class="md-footer-nav__link md-footer-nav__link--next" href="#">
-          <span class="md-footer-nav__label">Next</span>
-          <span>Guide</span>
-        </a>
-      </nav>
-
-      <footer class="md-content__footer">
-        <p>Built and maintained by <a href="https://github.com/" target="_blank" rel="noopener">username</a>.</p>
+      <footer class="site-footer">
+        <span>&copy; <span data-year>2026</span> HXVRMXN-dev. Built for the FiveM community.</span>
+        <div class="foot-links">
+          <a href="index.html">Home</a>
+          <a href="resources/cordwire.html">Cordwire</a>
+          <a href="https://github.com/HXVRMXN-dev" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://forum.cfx.re/u/HXVRMXN.dev" target="_blank" rel="noopener">CFX Forum</a>
+        </div>
       </footer>
 
-    </article>
-  </main>
-
-  <nav class="md-sidebar md-sidebar--secondary" id="tocSidebar">
-    <div class="md-sidebar__inner">
-      <p class="md-nav__title">On this page</p>
-      <ul class="md-nav__list" id="tocList"></ul>
     </div>
-  </nav>
-
+  </main>
 </div>
 
-<script src="script.js"></script>
+<div class="search-modal">
+  <div class="search-panel">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" placeholder="Search docs…" autocomplete="off" spellcheck="false">
+      <span class="search-esc">ESC</span>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
